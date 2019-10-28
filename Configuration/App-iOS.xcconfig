@@ -1,0 +1,27 @@
+//
+//  App-iOS.xcconfig
+//  SwiftUI-Previews-in-Modular-app
+//
+//  Created by Vlad Gorlov on 28.10.19.
+//  Copyright © 2019 Microcoding. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+
+CODE_SIGN_IDENTITY_Debug = iPhone Developer
+CODE_SIGN_IDENTITY_Release = iPhone Distribution
+CODE_SIGN_IDENTITY = $(CODE_SIGN_IDENTITY_$(CONFIGURATION))
+
+CODE_SIGN_STYLE_Debug = Automatic
+CODE_SIGN_STYLE_Release = Manual
+CODE_SIGN_STYLE = $(CODE_SIGN_STYLE_$(CONFIGURATION))
+
+PROVISIONING_PROFILE_SPECIFIER = $(PROVISIONING_PROFILE_SPECIFIER_$(CONFIGURATION))
+
+INFOPLIST_FILE = Configuration/App-Info.plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+
+// You can use file below to override project settings.
+#include? "Developer.xcconfig"

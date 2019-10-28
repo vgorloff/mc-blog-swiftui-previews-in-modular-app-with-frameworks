@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="89" id="UkY-sy-u4j" customClass="SettingsCell" customModule="Settings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UkY-sy-u4j" id="GUH-jS-eJL">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-xU-c3Q" customClass="GradientView" customModule="SharedUI">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="89"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpI-QZ-aGV">
+                        <rect key="frame" x="20" y="11" width="373" height="67"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TeY-xU-c3Q" firstAttribute="trailing" secondItem="GUH-jS-eJL" secondAttribute="trailing" id="7az-rM-xee"/>
+                    <constraint firstItem="TeY-xU-c3Q" firstAttribute="leading" secondItem="GUH-jS-eJL" secondAttribute="leading" id="A8o-eI-Bas"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jpI-QZ-aGV" secondAttribute="trailing" id="EkK-s6-AKu"/>
+                    <constraint firstItem="TeY-xU-c3Q" firstAttribute="bottom" secondItem="GUH-jS-eJL" secondAttribute="bottom" id="HT3-ha-Oi7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jpI-QZ-aGV" secondAttribute="bottom" id="LTa-lW-W4O"/>
+                    <constraint firstItem="jpI-QZ-aGV" firstAttribute="top" secondItem="GUH-jS-eJL" secondAttribute="topMargin" id="YHQ-LX-CuS"/>
+                    <constraint firstItem="TeY-xU-c3Q" firstAttribute="top" secondItem="GUH-jS-eJL" secondAttribute="top" id="gQ2-0B-zGd"/>
+                    <constraint firstItem="jpI-QZ-aGV" firstAttribute="leading" secondItem="GUH-jS-eJL" secondAttribute="leadingMargin" id="zZe-jC-BVo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gradientView" destination="TeY-xU-c3Q" id="URY-9e-uo2"/>
+                <outlet property="settingLabel" destination="jpI-QZ-aGV" id="PYA-8y-2f9"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="167.74553571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

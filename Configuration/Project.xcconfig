@@ -1,0 +1,12 @@
+//
+//  Project.xcconfig
+//  SwiftUI-Previews-in-Modular-app
+//
+//  Created by Vlad Gorlov on 28.10.19.
+//  Copyright © 2019 Microcoding. All rights reserved.
+//
+
+#include "Version.xcconfig"
+
+// You can use file below to override project settings.
+#include? "Developer.xcconfig"

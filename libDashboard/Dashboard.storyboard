@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kb-L9-VR9">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="90y-rt-4jP">
+            <objects>
+                <tabBarController id="3Kb-L9-VR9" customClass="DashboardViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mwN-rR-mxT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dAJ-K9-Anj" kind="relationship" relationship="viewControllers" id="6PY-7g-vWD"/>
+                        <segue destination="8Pl-1w-Whf" kind="relationship" relationship="viewControllers" id="mgX-w4-p9P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmA-0a-rIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-984" y="-280"/>
+        </scene>
+        <!--Aphorisms-->
+        <scene sceneID="eih-DX-JUe">
+            <objects>
+                <tableViewController id="nq3-H2-LRx" customClass="AphorismsViewController" customModule="Dashboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Iu7-MT-aZb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Aphorism" rowHeight="86" id="XnK-36-ecq" customClass="AphorismCell" customModule="Dashboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XnK-36-ecq" id="DFh-Cv-Vch">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35B-bX-r3J" customClass="GradientView" customModule="SharedUI">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Early to bed, early to rise, makes a man healthy, wealthy, and wise." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2J-Ow-cZJ">
+                                            <rect key="frame" x="16" y="11" width="288" height="64"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="35B-bX-r3J" firstAttribute="leading" secondItem="DFh-Cv-Vch" secondAttribute="leading" id="7bT-H9-sdN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="K2J-Ow-cZJ" secondAttribute="trailing" id="9j3-6J-Og1"/>
+                                        <constraint firstItem="K2J-Ow-cZJ" firstAttribute="top" secondItem="DFh-Cv-Vch" secondAttribute="topMargin" id="BBe-Hf-x69"/>
+                                        <constraint firstItem="35B-bX-r3J" firstAttribute="top" secondItem="DFh-Cv-Vch" secondAttribute="top" id="MG2-Ji-n2p"/>
+                                        <constraint firstItem="K2J-Ow-cZJ" firstAttribute="leading" secondItem="DFh-Cv-Vch" secondAttribute="leadingMargin" id="Nzc-Kc-XkY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="K2J-Ow-cZJ" secondAttribute="bottom" id="QVV-RT-ibw"/>
+                                        <constraint firstAttribute="bottom" secondItem="35B-bX-r3J" secondAttribute="bottom" id="UVp-P0-9LN"/>
+                                        <constraint firstAttribute="trailing" secondItem="35B-bX-r3J" secondAttribute="trailing" id="meC-c7-ga6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="aphorismLabel" destination="K2J-Ow-cZJ" id="KV3-pT-Myq"/>
+                                    <outlet property="gradientView" destination="35B-bX-r3J" id="iLP-wC-phr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nq3-H2-LRx" id="mgL-oV-T2r"/>
+                            <outlet property="delegate" destination="nq3-H2-LRx" id="82d-V4-uhg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Aphorisms" id="l75-fI-hm6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVZ-tz-0Sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1485" y="1329.9295774647887"/>
+        </scene>
+        <!--Aphorisms-->
+        <scene sceneID="c6s-Fs-Fnp">
+            <objects>
+                <navigationController id="dAJ-K9-Anj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Aphorisms" image="textformat.abc.dottedunderline" catalog="system" id="uel-Rg-1DT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TeE-hu-ekq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nq3-H2-LRx" kind="relationship" relationship="rootViewController" id="Gln-Wr-s0W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoG-Ry-dJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1485" y="530"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Vtr-Jb-woJ">
+            <objects>
+                <navigationController id="8Pl-1w-Whf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="ellipsis.circle" catalog="system" id="oeX-wa-bKV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g1m-Fz-VAW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DsC-L1-BTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="531"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis.circle" catalog="system" width="64" height="60"/>
+        <image name="textformat.abc.dottedunderline" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
