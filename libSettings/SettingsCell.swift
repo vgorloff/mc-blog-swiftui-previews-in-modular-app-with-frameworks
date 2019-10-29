@@ -17,12 +17,21 @@ class SettingsCell: UITableViewCell {
 
    override func awakeFromNib() {
       super.awakeFromNib()
-      gradientView.alpha = 0.1
+      gradientAlpha = 0.1
+      settingLabel.numberOfLines = 0
    }
 
 }
 
 extension SettingsCell {
+
+   var gradientAlpha: CGFloat {
+      get {
+         return gradientView.alpha
+      } set {
+         gradientView.alpha = newValue
+      }
+   }
 
    var setting: String? {
       get {

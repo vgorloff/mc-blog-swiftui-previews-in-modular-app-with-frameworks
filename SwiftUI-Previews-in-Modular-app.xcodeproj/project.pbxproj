@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8024F566236826650014BFF8 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315D62366E7ED00F6456F /* SharedUI.framework */; };
+		8024F567236826690014BFF8 /* SharedLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315C52366E7DE00F6456F /* SharedLogic.framework */; };
+		8024F5682368266F0014BFF8 /* SharedLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315C52366E7DE00F6456F /* SharedLogic.framework */; };
+		8024F569236827820014BFF8 /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315B42366E7CD00F6456F /* Settings.framework */; };
+		8024F56A236827820014BFF8 /* SharedLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315C52366E7DE00F6456F /* SharedLogic.framework */; };
+		8024F56B236827820014BFF8 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315D62366E7ED00F6456F /* SharedUI.framework */; };
+		804225A62367AAA7003443CB /* SettingsCell.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804225A52367AAA7003443CB /* SettingsCell.UI.swift */; };
+		8054DAF923683613006B7EA4 /* SettingsViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAF823683613006B7EA4 /* SettingsViewController.UI.swift */; };
+		8054DAFB23683802006B7EA4 /* DashboardViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAFA23683802006B7EA4 /* DashboardViewController.UI.swift */; };
+		8054DAFD2368399E006B7EA4 /* AphorismsViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAFC2368399E006B7EA4 /* AphorismsViewController.UI.swift */; };
 		80D315A92366E7B800F6456F /* Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315A22366E7B800F6456F /* Dashboard.framework */; };
 		80D315AA2366E7B800F6456F /* Dashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315A22366E7B800F6456F /* Dashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80D315BB2366E7CE00F6456F /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315B42366E7CD00F6456F /* Settings.framework */; };
@@ -28,6 +38,7 @@
 		80D31636236769CA00F6456F /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D315FA2366E88A00F6456F /* Application.swift */; };
 		80D3163823676E1F00F6456F /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3163723676E1F00F6456F /* SettingsCell.swift */; };
 		80D3163A2367715C00F6456F /* AphorismCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D316392367715C00F6456F /* AphorismCell.swift */; };
+		80D316422367778200F6456F /* GradientView.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D316412367778200F6456F /* GradientView.UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +132,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		804225A52367AAA7003443CB /* SettingsCell.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.UI.swift; sourceTree = "<group>"; };
+		8054DAF823683613006B7EA4 /* SettingsViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.UI.swift; sourceTree = "<group>"; };
+		8054DAFA23683802006B7EA4 /* DashboardViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.UI.swift; sourceTree = "<group>"; };
+		8054DAFC2368399E006B7EA4 /* AphorismsViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphorismsViewController.UI.swift; sourceTree = "<group>"; };
 		80D315862366E55500F6456F /* SwiftUI_Previews_in_Modular_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Previews_in_Modular_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D315A22366E7B800F6456F /* Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D315B42366E7CD00F6456F /* Settings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Settings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +163,7 @@
 		80D316332367698E00F6456F /* AphorismsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphorismsViewController.swift; sourceTree = "<group>"; };
 		80D3163723676E1F00F6456F /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		80D316392367715C00F6456F /* AphorismCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphorismCell.swift; sourceTree = "<group>"; };
+		80D316412367778200F6456F /* GradientView.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.UI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +182,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8024F569236827820014BFF8 /* Settings.framework in Frameworks */,
+				8024F56A236827820014BFF8 /* SharedLogic.framework in Frameworks */,
+				8024F56B236827820014BFF8 /* SharedUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +192,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8024F567236826690014BFF8 /* SharedLogic.framework in Frameworks */,
+				8024F566236826650014BFF8 /* SharedUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,12 +208,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8024F5682368266F0014BFF8 /* SharedLogic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8024F565236826650014BFF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80D3157D2366E55500F6456F = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +232,7 @@
 				80D315D72366E7ED00F6456F /* SharedUI */,
 				80D315C62366E7DE00F6456F /* SharedLogic */,
 				80D315872366E55500F6456F /* Products */,
+				8024F565236826650014BFF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,10 +251,12 @@
 		80D315A32366E7B800F6456F /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				80D3162E2367680900F6456F /* DashboardViewController.swift */,
 				80D316302367683100F6456F /* Dashboard.storyboard */,
-				80D316332367698E00F6456F /* AphorismsViewController.swift */,
 				80D316392367715C00F6456F /* AphorismCell.swift */,
+				80D316332367698E00F6456F /* AphorismsViewController.swift */,
+				8054DAFC2368399E006B7EA4 /* AphorismsViewController.UI.swift */,
+				80D3162E2367680900F6456F /* DashboardViewController.swift */,
+				8054DAFA23683802006B7EA4 /* DashboardViewController.UI.swift */,
 			);
 			name = Dashboard;
 			path = libDashboard;
@@ -233,9 +265,11 @@
 		80D315B52366E7CE00F6456F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				80D316042366F07800F6456F /* SettingsViewController.swift */,
 				80D3162C2367679200F6456F /* SettingsCell.xib */,
 				80D3163723676E1F00F6456F /* SettingsCell.swift */,
+				804225A52367AAA7003443CB /* SettingsCell.UI.swift */,
+				80D316042366F07800F6456F /* SettingsViewController.swift */,
+				8054DAF823683613006B7EA4 /* SettingsViewController.UI.swift */,
 			);
 			name = Settings;
 			path = libSettings;
@@ -256,6 +290,7 @@
 			children = (
 				80D315FE2366EF2600F6456F /* Extensions */,
 				80D316082366F1AB00F6456F /* GradientView.swift */,
+				80D316412367778200F6456F /* GradientView.UI.swift */,
 			);
 			name = SharedUI;
 			path = libSharedUI;
@@ -542,7 +577,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8054DAFB23683802006B7EA4 /* DashboardViewController.UI.swift in Sources */,
 				80D3163A2367715C00F6456F /* AphorismCell.swift in Sources */,
+				8054DAFD2368399E006B7EA4 /* AphorismsViewController.UI.swift in Sources */,
 				80D316322367683600F6456F /* DashboardViewController.swift in Sources */,
 				80D316342367698E00F6456F /* AphorismsViewController.swift in Sources */,
 			);
@@ -552,7 +589,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				804225A62367AAA7003443CB /* SettingsCell.UI.swift in Sources */,
 				80D3163823676E1F00F6456F /* SettingsCell.swift in Sources */,
+				8054DAF923683613006B7EA4 /* SettingsViewController.UI.swift in Sources */,
 				80D316052366F07800F6456F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +609,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D316422367778200F6456F /* GradientView.UI.swift in Sources */,
 				80D316092366F1AB00F6456F /* GradientView.swift in Sources */,
 				80D316022366EF6C00F6456F /* AphorismCategory.swift in Sources */,
 			);
