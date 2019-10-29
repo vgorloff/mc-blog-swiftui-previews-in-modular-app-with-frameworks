@@ -17,6 +17,7 @@
 		8054DAF923683613006B7EA4 /* SettingsViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAF823683613006B7EA4 /* SettingsViewController.UI.swift */; };
 		8054DAFB23683802006B7EA4 /* DashboardViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAFA23683802006B7EA4 /* DashboardViewController.UI.swift */; };
 		8054DAFD2368399E006B7EA4 /* AphorismsViewController.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DAFC2368399E006B7EA4 /* AphorismsViewController.UI.swift */; };
+		8054DB1F23683FE3006B7EA4 /* Application.UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054DB1E23683FE3006B7EA4 /* Application.UI.swift */; };
 		80D315A92366E7B800F6456F /* Dashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315A22366E7B800F6456F /* Dashboard.framework */; };
 		80D315AA2366E7B800F6456F /* Dashboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315A22366E7B800F6456F /* Dashboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80D315BB2366E7CE00F6456F /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D315B42366E7CD00F6456F /* Settings.framework */; };
@@ -136,6 +137,7 @@
 		8054DAF823683613006B7EA4 /* SettingsViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.UI.swift; sourceTree = "<group>"; };
 		8054DAFA23683802006B7EA4 /* DashboardViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.UI.swift; sourceTree = "<group>"; };
 		8054DAFC2368399E006B7EA4 /* AphorismsViewController.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AphorismsViewController.UI.swift; sourceTree = "<group>"; };
+		8054DB1E23683FE3006B7EA4 /* Application.UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.UI.swift; sourceTree = "<group>"; };
 		80D315862366E55500F6456F /* SwiftUI_Previews_in_Modular_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Previews_in_Modular_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D315A22366E7B800F6456F /* Dashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D315B42366E7CD00F6456F /* Settings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Settings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +318,7 @@
 				80D315F72366E88A00F6456F /* Resources */,
 				80D315FA2366E88A00F6456F /* Application.swift */,
 				80D315FB2366E88A00F6456F /* main.swift */,
+				8054DB1E23683FE3006B7EA4 /* Application.UI.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D31636236769CA00F6456F /* Application.swift in Sources */,
+				8054DB1F23683FE3006B7EA4 /* Application.UI.swift in Sources */,
 				80D31635236769C700F6456F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

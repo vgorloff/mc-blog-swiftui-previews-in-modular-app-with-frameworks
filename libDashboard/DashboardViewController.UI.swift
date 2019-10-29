@@ -11,14 +11,19 @@ import Foundation
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
-struct DashboardViewController_UI: UIViewControllerRepresentable {
+public struct DashboardViewController_UI: UIViewControllerRepresentable {
+
    let bundle = Bundle(for: DashboardViewController.self)
-   func makeUIViewController(context: Context) -> DashboardViewController {
+
+   public init() {
+   }
+
+   public func makeUIViewController(context: Context) -> DashboardViewController {
       let vc = UIStoryboard(name: "Dashboard", bundle: bundle).instantiateInitialViewController() as! DashboardViewController
       return vc
    }
 
-   func updateUIViewController(_ uiViewController: DashboardViewController, context: Context) {
+   public func updateUIViewController(_ uiViewController: DashboardViewController, context: Context) {
    }
 }
 

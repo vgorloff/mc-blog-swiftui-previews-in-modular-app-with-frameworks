@@ -11,14 +11,18 @@ import Foundation
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
-struct GradientView_UI: UIViewRepresentable {
+public struct GradientView_UI: UIViewRepresentable {
 
    let view = GradientView()
-   func makeUIView(context: Context) -> GradientView {
+
+   public init() {
+   }
+
+   public func makeUIView(context: Context) -> GradientView {
       return view
    }
 
-   func updateUIView(_ uiView: GradientView, context: Context) {
+   public func updateUIView(_ uiView: GradientView, context: Context) {
    }
 }
 
