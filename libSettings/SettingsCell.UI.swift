@@ -27,7 +27,7 @@ struct SettingsCell_UI: UIViewRepresentable {
    }
 }
 
-struct SettingsCell_UI_Previews: PreviewProvider {
+public struct SettingsCell_UI_Previews: PreviewProvider {
 
    static var views: [SettingsCell_UI] {
       let views = [
@@ -37,7 +37,7 @@ struct SettingsCell_UI_Previews: PreviewProvider {
       return views
    }
 
-   static var previews: some View {
+   public static var previews: some View {
       ZStack {
          Color.gray
          VStack {

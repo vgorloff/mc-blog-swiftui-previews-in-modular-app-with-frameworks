@@ -15,8 +15,7 @@ public struct DashboardViewController_UI: UIViewControllerRepresentable {
 
    let bundle = Bundle(for: DashboardViewController.self)
 
-   public init() {
-   }
+   public init() {}
 
    public func makeUIViewController(context: Context) -> DashboardViewController {
       let vc = UIStoryboard(name: "Dashboard", bundle: bundle).instantiateInitialViewController() as! DashboardViewController
@@ -27,8 +26,8 @@ public struct DashboardViewController_UI: UIViewControllerRepresentable {
    }
 }
 
-struct DashboardViewController_UI_Previews: PreviewProvider {
-   static var previews: some View {
+public struct DashboardViewController_UI_Previews: PreviewProvider {
+   public static var previews: some View {
       DashboardViewController_UI().previewDevice("iPhone SE")
    }
 }

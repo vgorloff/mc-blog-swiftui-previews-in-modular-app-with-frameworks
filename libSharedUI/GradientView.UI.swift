@@ -26,7 +26,7 @@ public struct GradientView_UI: UIViewRepresentable {
    }
 }
 
-struct GradientView_UI_Previews: PreviewProvider {
+public struct GradientView_UI_Previews: PreviewProvider {
 
    static var views: [GradientView_UI] {
       let views = [
@@ -36,7 +36,7 @@ struct GradientView_UI_Previews: PreviewProvider {
       return views
    }
 
-   static var previews: some View {
+   public static var previews: some View {
       ZStack {
          Color.gray
          VStack {

@@ -26,8 +26,8 @@ struct AphorismsViewController_UI: UIViewControllerRepresentable {
    }
 }
 
-struct AphorismsViewController_UI_Previews: PreviewProvider {
-   static var previews: some View {
+public struct AphorismsViewController_UI_Previews: PreviewProvider {
+   public static var previews: some View {
       AphorismsViewController_UI().previewDevice("iPhone SE")
    }
 }

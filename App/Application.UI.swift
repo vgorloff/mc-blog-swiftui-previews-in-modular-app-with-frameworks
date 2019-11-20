@@ -9,6 +9,7 @@
 import Foundation
 import SharedUI
 import Dashboard
+import Settings
 
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
@@ -17,7 +18,8 @@ struct Application_UI_Previews: PreviewProvider {
    static var previews: some View {
       Group {
          GradientView_UI().previewDevice("iPhone SE");
-         DashboardViewController_UI().previewDevice("iPhone SE")
+         DashboardViewController_UI().previewDevice("iPhone SE");
+         SettingsViewController_UI().previewDevice("iPhone SE")
       }
    }
 }
